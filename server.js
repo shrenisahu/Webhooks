@@ -1,6 +1,6 @@
 const express=require('express');
 const app=express();
-const PORT=3000;
+const PORT=3001;
 
 app.post("/github-webhook",(req,res)=>{
 console.log("insideyy",req.data)
@@ -9,10 +9,18 @@ console.log("insideyy",req.data)
 
 app.get("/github",(req,res)=>{
     console.log("inside get")
-    res.send("received")
+    res.end("received")
     
     })
 
-app.listen(PORT,()=>{
+    app.get("/",(req,res)=>{
+        console.log("inside get")
+        res.end("received 11")
+        
+        })
+    
+
+app.listen(PORT,(req,res)=>{
 console.log("hey")
+
 })
