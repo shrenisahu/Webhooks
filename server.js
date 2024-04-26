@@ -4,7 +4,6 @@ const PORT=3001;
 
 app.post("/github-webhook",(req,res)=>{
 console.log("insideyy",req.data)
-
 })
 
 app.get("/github",(req,res)=>{
