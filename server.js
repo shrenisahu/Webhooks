@@ -18,8 +18,7 @@ app.get("/github",(req,res)=>{
 
     app.get("/",(req,res)=>{
         console.log("inside get")
-        res.end("received 11")
-        
+        res.end("received 11") 
         })
     
 
